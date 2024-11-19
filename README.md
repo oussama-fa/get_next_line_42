@@ -1,4 +1,4 @@
-# ft_printf_42 - Custom printf Implementation - ! no bonus
+# get_next_line with Bonus
 
 ## Overview
 
@@ -15,8 +15,8 @@ The get_next_line function uses a static buffer to manage leftover data across m
 
 Here are some screenshots of my project implementation:
 
-<img src="100.png" alt="Project Screenshot 1" width="500"/>
-<img src="corr.png" alt="Project Screenshot 2" width="900"/>
+<img src="125.png" alt="Project Screenshot 1" width="500"/>
+<img src="corr.png" alt="Project Screenshot 2" width="1000"/>
 
 ---
 
