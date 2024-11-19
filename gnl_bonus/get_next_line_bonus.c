@@ -6,7 +6,7 @@
 /*   By: oufarah <oufarah@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 04:25:18 by oufarah           #+#    #+#             */
-/*   Updated: 2024/11/16 04:39:37 by oufarah          ###   ########.fr       */
+/*   Updated: 2024/11/18 01:49:56 by oufarah          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ static char	*extract_line(char **rest)
 
 	line = get_linis(*rest);
 	if (!line)
-		return (free(*rest), *rest = NULL, NULL);
+		return (free(*rest), *rest = NULL);
 	temp = *rest;
 	*rest = get_rest(*rest);
 	free(temp);
@@ -88,8 +88,10 @@ char	*get_next_line(int fd)
 {
 	static char	*rest[OPEN_MAX];
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || fd >= OPEN_MAX)
+	if (fd < 0 || fd >= OPEN_MAX)
 		return (NULL);
+	if (BUFFER_SIZE <= 0 || read(fd, NULL, 0) == -1)
+		return (free(rest[fd]), rest[fd] = NULL);
 	rest[fd] = read_to_rest(fd, rest[fd]);
 	if (!rest[fd])
 		return (NULL);
