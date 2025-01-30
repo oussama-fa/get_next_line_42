@@ -15,7 +15,6 @@ This project deepens understanding of *file handling, dynamic memory allocation*
 
 Here are some screenshots of my project implementation:
 
-
 <div align="center">
   <img src="125.png" alt="125 Successe" width="500"/>
   <img src="corr.png" alt="MOULINETTE" width="700"/>
