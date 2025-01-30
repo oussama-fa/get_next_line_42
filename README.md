@@ -41,7 +41,7 @@ The function `get_next_line` reads a file descriptor one line at a time and retu
 ---
 ## Function Prototype:
 
-  ```char *get_next_line(int fd);```
+- ```char *get_next_line(int fd);```
 
 ---
 
@@ -81,3 +81,15 @@ If you wan't Bonus part :
 cd gnl_mendatory
 cc -Wall -Wextra -Werror -D BUFFER_SIZE=128 get_next_line_bonus.c get_next_line_utils_bonus.c main.c -o gnl
 ```
+
+3. Run the program:
+```bash
+./gnl file.txt
+```
+---
+
+## Author
+*Oussama FARAH*
+
+- 📱 **Instagram**: [@oussama._.farah](https://www.instagram.com/oussama._.farah/)
+- ✉️ **Email**: [oussama05farah@gmail.com](mailto:oussama05farah@gmail.com)
